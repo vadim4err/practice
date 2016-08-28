@@ -16,3 +16,8 @@ LICENSE_AFL.txt
 mage
 php.ini.sample
 RELEASE_NOTES.txt
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
