@@ -21,3 +21,8 @@ RELEASE_NOTES.txt
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
+n98-magerun-dev.phar
+.modman/
+.idea/
+.idea/public_html.iml
+.idea/workspace.xml
