@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Solvingmagento_ConfigurablePreSelect>
+            <version>0.0.1</version>
+        </Solvingmagento_ConfigurablePreSelect>
+    </modules>
+    <frontend>
+        <events>
+            <catalog_controller_product_init_after>
+                <observers>
+                    <solvingmagento_configurablepreselect>
+                        <class>solvingmagento_configurablepreselect/observer</class>
+                        <method>preSelectConfigurable</method>
+                    </solvingmagento_configurablepreselect>
+                </observers>
+            </catalog_controller_product_init_after>
+        </events>
+    </frontend>
+    <global>
+        <models>
+            <solvingmagento_configurablepreselect>
+                <class>Solvingmagento_ConfigurablePreSelect_Model</class>
+            </solvingmagento_configurablepreselect>
+        </models>
+    </global>
+</config>
