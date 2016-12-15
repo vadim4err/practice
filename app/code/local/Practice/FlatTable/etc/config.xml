@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Practice_FlatTable>
+            <version>0.0.1</version>
+        </Practice_FlatTable>
+    </modules>
+    <global>
+        <models>
+            <practice_flattable>
+                <class>Practice_FlatTable_Model</class>
+                <resourceModel>practice_flattable_resource</resourceModel>
+            </practice_flattable>
+            <practice_flattable_resource>
+                <class>Practice_FlatTable_Model_Resource</class>
+                <entities>
+                    <flat1>
+                        <table>flat1_example</table>
+                    </flat1>
+                </entities>
+            </practice_flattable_resource>
+        </models>
+        <resources>
+            <practice_flattable_setup>
+                <setup>
+                    <module>Practice_FlatTable</module>
+                </setup>
+            </practice_flattable_setup>
+        </resources>
+    </global>
+</config>
