@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Practice_ProductAttribute>
+            <version>0.0.1</version>
+        </Practice_ProductAttribute>
+    </modules>
+    <global>
+        <models>
+            <practice_productattribute>
+                <class>Practice_ProductAttribute_Model</class>
+            </practice_productattribute>
+        </models>
+        <resources>
+            <practice_productattribute_setup>
+                <setup>
+                    <module>Practice_ProductAttribute</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </practice_productattribute_setup>
+        </resources>
+    </global>
+</config>
