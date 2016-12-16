@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Practice_Carousel>
+            <version>0.0.1</version>
+        </Practice_Carousel>
+    </modules>
+    <global>
+        <resources>
+            <practice_carousel_setup>
+                <setup>
+                    <module>Practice_Carousel</module>
+                </setup>
+            </practice_carousel_setup>
+        </resources>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <practice_carousel>
+                    <file>owl_carousel.xml</file>
+                </practice_carousel>
+            </updates>
+        </layout>
+    </frontend>
+</config>

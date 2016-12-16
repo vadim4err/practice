@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addJs">
+                <js>carousel/owl.carousel.js</js>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/carousel/owl.carousel.css</stylesheet>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/carousel/owl.theme.css</stylesheet>
+            </action>
+        </reference>
+    </default>
+
+    <cms_index_index>
+        <reference name="content">
+            <block type="core/template" name="owl_carousel" template="carousel/owl_carousel.phtml" before="-"/>
+        </reference>
+    </cms_index_index>
+</layout>
