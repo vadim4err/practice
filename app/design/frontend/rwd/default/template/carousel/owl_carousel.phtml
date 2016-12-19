@@ -1,0 +1,30 @@
+<style>
+    #owl-demo .item{
+        margin: 3px;
+    }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+</style>
+<?php
+echo $this->getLayout()->createBlock('cms/block')->setBlockId('carousel')->toHtml();
+?>
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function($) {
+
+        $("#owl-demo").owlCarousel({
+
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+            items : 4,
+            itemsDesktop : [1199,3],
+            itemsDesktopSmall : [979,3],
+            pagination: false
+
+        });
+
+    });
+</script>
