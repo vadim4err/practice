@@ -29,6 +29,18 @@ class Magebase_AttributeSetHandle_Model_Observer
 
         /* @var $update Mage_Core_Model_Layout_Update */
         $update = $observer->getEvent()->getLayout()->getUpdate();
-        $update->addHandle('PRODUCT_ATTRIBUTE_SET_' . $niceName);
+        $handles = $update->getHandles(); // Store all handles in a variable
+        $update->resetHandles(); // Remove all handles
+
+        /**
+         * Rearrange layout handles to ensure PRODUCT_<product_id>
+         * handle is added last
+         */
+        foreach ($handles as $handle) {
+            $update->addHandle($handle);
+            if ($handle == 'PRODUCT_TYPE_' . $product->getTypeId()) {
+                $update->addHandle('PRODUCT_ATTRIBUTE_SET_' . $niceName);
+            }
+        }
     }
 }
